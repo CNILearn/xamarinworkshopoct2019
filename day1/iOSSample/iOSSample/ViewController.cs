@@ -21,5 +21,11 @@ namespace iOSSample
             base.DidReceiveMemoryWarning ();
             // Release any cached data, images, etc that aren't in use.
         }
+
+        partial void ButtonHello_TouchUpInside(UIButton sender)
+        {
+            var name = this.TextName.Text;
+            this.LabelResult.Text = $"Hello, {name}";
+        }
     }
 }
