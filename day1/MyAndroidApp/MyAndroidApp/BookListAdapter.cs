@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 
 using Android.App;
@@ -16,7 +17,6 @@ namespace MyAndroidApp
     {
         private readonly Activity _activity;
         private readonly IList<Book> _books;
-
 
         public BookListAdapter(Activity activity, IList<Book> books)
         {
@@ -38,13 +38,13 @@ namespace MyAndroidApp
         public override View GetView(int position, View convertView, ViewGroup parent)
         {
             var view = convertView;
-
+            
             if (view == null)
             {
                 view = _activity.LayoutInflater.Inflate(Android.Resource.Layout.SimpleListItem1, null);
             }
 
-            view.FindViewById<TextView>(Android.Resource.Id.Text1).Text 
+            view.FindViewById<TextView>(Android.Resource.Id.Text1).Text
                 = $"{position}: {_books[position].Title}";
             return view;
         }

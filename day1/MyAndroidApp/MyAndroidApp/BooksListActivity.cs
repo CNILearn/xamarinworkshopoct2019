@@ -16,15 +16,15 @@ namespace MyAndroidApp
     public class BooksListActivity : ListActivity
     {
         private List<Book> _books;
+
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
 
             // Create your application here
             _books = new List<Book>(new BookFactory().GetBooks());
-
-            // ListAdapter = new BookListAdapter(this, _books);
-            ListAdapter = new ArrayAdapter<Book>(this, Android.Resource.Layout.SimpleListItemChecked, _books); 
+            // ListAdapter = new ArrayAdapter<Book>(this, Android.Resource.Layout.SimpleListItemChecked, _books);
+            ListAdapter = new BookListAdapter(this, _books);
         }
 
         protected override void OnListItemClick(ListView l, View v, int position, long id)
@@ -32,8 +32,8 @@ namespace MyAndroidApp
             // base.OnListItemClick(l, v, position, id);
 
             AlertDialog.Builder builder = new AlertDialog.Builder(this);
-
-            builder.SetMessage($"clicked {_books[position]}").SetTitle(Android.Resource.String.Ok);
+            builder.SetMessage($"clicked {_books[position]}")
+                .SetTitle(_books[position].Title);
 
             AlertDialog dialog = builder.Create();
             dialog.Show();
