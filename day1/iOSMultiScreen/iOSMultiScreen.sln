@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30114.105
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "iOSMultiScreen", "iOSMultiScreen\iOSMultiScreen.csproj", "{DEEABF99-7449-44C9-BDDA-F4065EB52931}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|iPhone = Debug|iPhone
+		Debug|iPhoneSimulator = Debug|iPhoneSimulator
+		Release|iPhone = Release|iPhone
+		Release|iPhoneSimulator = Release|iPhoneSimulator
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DEEABF99-7449-44C9-BDDA-F4065EB52931}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{DEEABF99-7449-44C9-BDDA-F4065EB52931}.Debug|iPhone.Build.0 = Debug|iPhone
+		{DEEABF99-7449-44C9-BDDA-F4065EB52931}.Debug|iPhone.Deploy.0 = Debug|iPhone
+		{DEEABF99-7449-44C9-BDDA-F4065EB52931}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{DEEABF99-7449-44C9-BDDA-F4065EB52931}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{DEEABF99-7449-44C9-BDDA-F4065EB52931}.Debug|iPhoneSimulator.Deploy.0 = Debug|iPhoneSimulator
+		{DEEABF99-7449-44C9-BDDA-F4065EB52931}.Release|iPhone.ActiveCfg = Release|iPhone
+		{DEEABF99-7449-44C9-BDDA-F4065EB52931}.Release|iPhone.Build.0 = Release|iPhone
+		{DEEABF99-7449-44C9-BDDA-F4065EB52931}.Release|iPhone.Deploy.0 = Release|iPhone
+		{DEEABF99-7449-44C9-BDDA-F4065EB52931}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{DEEABF99-7449-44C9-BDDA-F4065EB52931}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+		{DEEABF99-7449-44C9-BDDA-F4065EB52931}.Release|iPhoneSimulator.Deploy.0 = Release|iPhoneSimulator
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B422B07B-E3C1-46BC-9605-F95786DC8F50}
+	EndGlobalSection
+EndGlobal
